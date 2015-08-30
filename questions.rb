@@ -25,7 +25,7 @@ end
 # don't reverse the array, but reverse every word inside it. e.g.
 # ['dog', 'monkey'] becomes ['god', 'yeknom']
 def reverse_every_element_in_array(array)
-  array.reverse
+  array.split(' ').reverse.join
 end
 
 # plus { |e|  prints e, " " } ?
@@ -42,9 +42,9 @@ end
 # discard the first 3 elements of an array, 
 # e.g. [1, 2, 3, 4, 5, 6] becomes [4, 5, 6]
 def all_elements_except_first_3(array)
-  array.slice[2] 
+  array.drop(3)
 end
-# or {|e| e > 4}
+#passed
 
 # add an element to the beginning of an array
 def add_element_to_beginning_of_array(array, element)
@@ -120,7 +120,7 @@ end
 # get the average from an array, rounded to the nearest integer
 # so [10, 15, 25] should return 17
 def average_of_array(array)
-  
+  array.
 end
 
 # get all the elements in an array, up until the first element
